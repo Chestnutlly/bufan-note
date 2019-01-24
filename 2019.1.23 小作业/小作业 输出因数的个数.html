@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//用户输入一个数，输出所偶遇能够整除它的数字。比如，用户输入48，此时输出1、2、3、4、6、8、12、16、24、48 。  共10个数字。
+		var num=prompt('请输入一个数字:');
+		var sum=0;
+		for(var i=1;i<=num;i++){
+			if(num%i==0){
+                
+				console.log(i);
+			    sum++;
+
+			}
+			
+		}
+		console.log('共'+sum+'个数字');
+	</script>
+</head>
+<body>
+
+</body>
+</html>

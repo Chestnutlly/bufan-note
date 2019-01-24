@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		var arr=['a','b','c','d','e'];
+		// 第一种方法
+		function reverse(arr){
+			var arr2=[];
+			for(i=arr.length-1;i>=0;i--){
+				arr2.push(arr[i]);
+			}
+			return arr2;
+		}
+		alert(reverse(arr));
+		//第二种方法
+		function reverse2(arr){
+			for( var i=0;i<Math.floor(arr.length/2);i++){
+				var temp=arr[i];
+				arr[i]=arr[arr.length-1-i];
+				arr[arr.length-1-i]=temp;
+			}
+			return arr;
+		}
+		alert('第二种方法翻转之后的结果为:'+reverse2(arr));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

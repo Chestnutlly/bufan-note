@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//水仙花数是一种特殊的三位数，它的特点就是，每个数位的立方和，等于它本身,100~999之内，只有4个水仙花数，请找出来
+		var a=0;
+		var b=0;
+		var c=0;
+		for(var i=100;i<=999;i++){
+			 a=parseInt(i/100)%10;  //百位
+			 b=parseInt(i/10)%10;  //十位
+			 c=i%10;  //个位
+			if(Math.pow(c, 3) + Math.pow(b, 3) + Math.pow(a, 3)==i){
+				console.log(i);
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

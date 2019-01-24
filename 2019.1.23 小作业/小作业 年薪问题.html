@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		var year=prompt('请输入工作的年数:');
+		var pay=prompt('请输入您的月薪:');
+		
+		if(year<=0){
+             bonus=pay*1;
+           
+          if(pay>8000){
+          	   bonus=pay*1.2;
+          	
+          }
+		}else if(year=1){
+			 bonus=pay*1.5;
+			if(pay>10000){
+			   bonus=pay*1.7;
+			}
+		}else{
+			 bonus=pay*3;
+			if(pay>12000){
+			   bonus=pay*3.2;
+			}
+		}
+		var bonus='您的年终奖为:'+bonus;
+		alert(bonus);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

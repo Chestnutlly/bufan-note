@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		//质数：就是只能被1和自己整除。翻译过来：它的因数个数是2。
+        //比如：2、3、5、7、11、13、17、19、23、29、31、37……用户输入一个数字，弹出这个数字是否是质数。
+     var num=prompt('请输入一个数字:');
+     var sum=0;
+     
+     	for(var i=1;i<=num;i++){
+     		if(num%i==0){
+     			sum++;
+     	}
+     }
+     if(sum==2){
+     	alert('这是一个质数');
+     }else{
+     	alert('这不是一个质数');
+     }
+	</script>
+</head>
+<body>
+
+</body>
+</html>

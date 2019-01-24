@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		// 求1!+2!+3!+....+n!
+		function jc(n){
+
+			if(n==1){
+				return 1;
+			}
+			return n*jc(n-1);
+		
+		}
+		function jch(n){
+			var sum=0;
+			for(i=1;i<=n;i++){
+				sum+=jc(i);
+			}
+			return sum;
+		}
+		alert('5的阶乘的和:'+jch(5));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

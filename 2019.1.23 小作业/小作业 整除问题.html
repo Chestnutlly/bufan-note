@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//用户输入一个数字，然后判断这个数字能否被5、6整除，根据情况弹出下面4种警告框
+		
+		var number=prompt('请随机输入一个数字:');
+		if(number%5==0){
+			
+			if(number%6==0){
+				alert('这个数字同时能被5和6整除');
+      
+			}else{
+				alert('这个数字只能被5整除,但是不能被6整除');
+			}
+		}else{
+			
+			if(number%6==0){
+				alert('这个数字能被6整除,但是不能被5整除');
+			}else{
+				alert('这个数字既不能被5整除,也不能被6整除');
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
